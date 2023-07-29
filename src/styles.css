@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #006633;
+  --accent: #c0462e;
+  --secondary-color: #cc6955;
+  --background: #ffffff;
+  --text: #000000;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px auto;
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+.navbar div {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+.navbar a {
+  color: var(--background);
+  text-decoration: none;
+  font-size: 18px;
+}
