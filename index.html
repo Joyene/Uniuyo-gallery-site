@@ -9,6 +9,10 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <title>Uniuyo gallery</title>
   </head>
@@ -16,29 +20,70 @@
     <div class="main">
       <div class="main-wrap">
         <div class="logo"><img src="images/logo.png" alt="logo" /></div>
-        <div class="navigation_bar">
-          <div class="home"><a href="">Home</a></div>
-          <div class="academics"><a href="">Academics</a></div>
-          <div class="school"><a href="#images">School</a></div>
-          <div class="portal"><a href="">E-portal</a></div>
-          <div class="admin"><a href="">Administration</a></div>
-          <div class="quick_links"><a href="">Quick links</a></div>
-          <div class="about"><a href="">About us</a></div>
+        <div class="navigation_bar" id="dropdownClick">
+          <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#images">Gallery</a>
+            <a href="https://uniuyo.edu.ng/eportals/index.php">E-portal</a>
+            <a href="index2.html">About us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </div>
 
         <div class="container">
           <div class="row">
             <div class="col-7">
-              <div class="image-container">
-                <img src="images/permiste gate.jpeg" class="images" />
+              <div class="slideshow">
+                <div class="slide">
+                  <img src="images/permiste gate.jpeg" class="imgs" />
+                </div>
+                <div class="slide">
+                  <img class="img1" src="images/pic14.jpg" alt="Image 1" />
+                </div>
+                <div class="slide">
+                  <img class="img2" src="images/pic6.jpg" alt="Image 2" />
+                </div>
+                <div class="slide">
+                  <img
+                    class="img3"
+                    src="images/permiste gate.jpeg"
+                    alt="Image 3"
+                  />
+                </div>
+                <div class="slide">
+                  <img class="img4" src="images/permsitegate2.jpeg" alt="" />
+                </div>
+                <div class="slide">
+                  <img class="img5" src="images/1690979758110.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img
+                    class="img6"
+                    src="images/IMG_20230731_120054_491.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    class="img7"
+                    src="images/IMG_20230731_120726_339.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    class="img8"
+                    src="images/IMG_20230731_120500_856.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div class="col-5">
               <div class="text">
-                <h1 class="head">
-                  Uniuyo is a brand <br />
-                  protect it.
-                </h1>
+                <h1 id="head"></h1>
                 <p class="para">
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui
                   blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -50,7 +95,11 @@
             </div>
           </div>
         </div>
-        <div class="academics" id="academicss">div</div>
+        <hr />
+        <div>
+          <h1 id="demo"></h1>
+        </div>
+
         <div id="images">
           <div class="image-container1">
             <div class="image">
